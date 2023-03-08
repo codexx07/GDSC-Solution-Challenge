@@ -21,8 +21,18 @@ html{
     font-family: var(--body-font);
     font-size: 10px;
     color: var(--body-font-color);
-    scroll-behaviour: smooth;   
+    scroll-behaviour: smooth; 
+    animation: color 9s infinite linear;
 }
+
+@keyframes color {
+    0%   { background: #5e33cc; }
+    20%  { background: #bfc2d8; }
+    40%  { background: #383998; }
+    60%  { background: #1aa5c5; }
+    80%  { background: #3394cc; }
+    100% { background: #33ccad; }
+  }
 
 section{
     padding: 3.9rem 0;
