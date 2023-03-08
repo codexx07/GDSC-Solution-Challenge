@@ -75,8 +75,13 @@ header{
     z-index: 1500;
 }
 
-.fa-items{
+.fa-times{
     display: none;
+}
+
+.fa-bars{
+    display: block;
+    color: #000000;
 }
 
 .nav-list{
