@@ -84,7 +84,7 @@ header{
 
 .fa-bars{
     display: block;
-    color: #000000;
+    color: #fff;
 }
 
 .nav-list{
@@ -120,6 +120,7 @@ header{
 
 .open .fa-times{
     display: block;
+    display: #fff;
 }
 
 .open .fa-bars{
