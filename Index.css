@@ -10,19 +10,19 @@
     box-sizing: border-box;
 }
 
-:root{
+/* :root{
     --main-font: 'Source Sans Pro', sans-serif;
     --secondary-font: 'Herr Von Muellerhoff', cursive;
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #008080;
     --secondary-font-color: #c59d5f;
-    --body-font-color: #00FFFF;
+    --body-font-color: #00FFFF; */
 }
 
 html{
     font-family: var(--body-font);
     font-size: 10px;
-    color: var(--body-font-color);
+    color: #ffffff;
     scroll-behaviour: smooth; 
     animation: color 9s infinite linear;
 }
@@ -41,7 +41,7 @@ a{
 }
 
 p{
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .container{
@@ -170,7 +170,7 @@ body
     justify-content: flex-end;
     align-items:flex-end;
     min-height: 100vh;
-    background-color: #000000;
+    background-color: #ffff;
 
 }
 footer
@@ -178,12 +178,12 @@ footer
     position: relative;
     width:100%;
     background: #3586ff;
-    min-height: 100px;
+    min-height: 60px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items:center;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 footer .social_icon,
@@ -239,6 +239,7 @@ footer .wave
     left: 0px;
     width: 100%;
     height: 100px;
+    background: url(wave.png);
     background-size: 1000px 100px;
 }
 footer .wave#wave1
@@ -248,11 +249,65 @@ footer .wave#wave1
     bottom: 0;
     animation: animateWave 4s linear infinite;
 }
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_03 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_04 3s linear infinite;
+}
 @keyframes animateWave
 {
     0%
     {
         background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_03
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_04
+{
+    0%
+    {
+        background-position-x: 0px;
     }
     100%
     {
